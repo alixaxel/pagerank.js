@@ -92,6 +92,7 @@ module.exports = (function () {
 	};
 
 	self.reset = function () {
+		self.count = 0;
 		self.edges = {};
 		self.nodes = {};
 	};
