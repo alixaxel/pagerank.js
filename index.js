@@ -1,5 +1,17 @@
 'use strict';
 
+function forOwn(object, callback) {
+	if ((typeof object === 'object') && (typeof callback === 'function')) {
+		for (var key in object) {
+			if (object.hasOwnProperty(key) === true) {
+				if (callback(key, object[key]) === false) {
+					break;
+				}
+			}
+		}
+	}
+}
+
 module.exports = (function () {
 	var self = {
 		count: 0,
@@ -8,7 +20,11 @@ module.exports = (function () {
 	};
 
 	self.link = function (source, target, weight) {
-		weight = weight || 1;
+		if (isFinite(weight) !== true) {
+			weight = 1;
+		}
+		
+		weight = parseFloat(weight);
 
 		if (self.nodes.hasOwnProperty(source) !== true) {
 			self.count++;
@@ -99,15 +115,3 @@ module.exports = (function () {
 
 	return self;
 })();
-
-function forOwn(object, callback) {
-	if ((typeof object === 'object') && (typeof callback === 'function')) {
-		for (var key in object) {
-			if (object.hasOwnProperty(key) === true) {
-				if (callback(key, object[key]) === false) {
-					break;
-				}
-			}
-		}
-	}
-}
