@@ -1,6 +1,6 @@
 {
 	"name": "pagerank.js",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "Weighted PageRank Algorithm in vanilla JavaScript",
 	"main": "./lib/index.js",
 	"scripts": {

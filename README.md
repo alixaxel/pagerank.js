@@ -20,6 +20,16 @@ graph.rank(0.85, 0.000001, function (node, rank) {
 })
 ```
 
+Output
+------
+
+```
+Node 1 has a rank of 0.34983779905464363
+Node 2 has a rank of 0.1688733284604475
+Node 3 has a rank of 0.3295121849483849
+Node 4 has a rank of 0.15177668753652385
+```
+
 Install
 -------
 
