@@ -1,8 +1,8 @@
 {
-	"name": "pagerank",
+	"name": "pagerank.js",
 	"version": "1.0.0",
 	"description": "Weighted PageRank Algorithm in vanilla JavaScript",
-	"main": "index.js",
+	"main": "./lib/index.js",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
