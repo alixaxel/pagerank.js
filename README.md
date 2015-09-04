@@ -1,5 +1,7 @@
 pagerank.js
 -----------
+[![NPM Version](https://img.shields.io/npm/v/pagerank.js.svg)](https://www.npmjs.org/package/genex)
+[![NPM Downloads](https://img.shields.io/npm/dm/pagerank.js.svg)](https://www.npmjs.org/package/pagerank.js)
 
 Vanilla JavaScript implementation of the Weighted PageRank Algorithm
 
@@ -33,7 +35,7 @@ Node 4 has a rank of 0.15177668753652385
 Install
 -------
 
-	npm install pagerank.js
+    npm install pagerank.js --save
 
 License
 -------
